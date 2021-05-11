@@ -1,0 +1,641 @@
+@charset "utf8";
+*{
+	/*outline: 1px solid;*/
+}
+
+html { 
+    background: url("../resimler/arkaplan.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0;
+	margin:0;
+	font-family: arial;
+}
+::-webkit-scrollbar {
+	width: 0px; 
+	background-color: orange; 
+}
+::-webkit-scrollbar-thumb {
+	background-color: red; 
+	border-radius:0px 
+}
+::-webkit-scrollbar-thumb:hover { 
+	background-color: red
+}
+#container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+
+}
+.print{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+#anasayfadon{
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: white;
+}
+#sbildirim{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	margin:14px;
+	height: 600px;
+	overflow: hidden;
+	overflow-y: scroll;
+	padding: 0;
+	background: rgba(255,0,0,0.4);
+
+	
+}
+.in{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	min-height: 30px;
+	color: black;
+	margin: 0;
+	border: none;
+	outline: none;
+	word-break: keep-all;
+	background: rgba(255,255,200,0.5);
+	font-weight: bolder;
+}
+.g,.t,.n{
+	border: solid 1px;
+	margin-right: 2px;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+.g{
+	background:rgba(255,255,5,0.95);
+	color:red;
+	font-size: 14px;
+	font-weight: bold;
+}
+.t{
+	background: rgba(0,255,5,0.95);
+	color: blue;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+.n{
+	background: rgba(255,255,255,0.95);
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+.bilgi{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 1px solid orange;
+}
+
+
+.mesaj{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	min-height: 30px;
+	color: black;
+	font-weight: bolder;
+	font-size: 15px;
+	background: rgba(255,255,200,0.5);
+	word-break: keep-all;
+	text-align: center;
+}
+.sipariss{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	min-height: 150px;
+	color: black;
+	font-weight: bolder;
+	font-size: 15px;
+	background: rgba(255,255,200,0.5);
+	word-break: keep-all;
+	text-align: center;
+}
+#siparisler{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+}
+.btns{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+	
+}
+.btns{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:none;
+	outline: none;
+	height: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bolder;
+	transition: .5s;
+	margin: 10px;
+	width: 60%;
+	font-size: 14px;
+
+
+}
+.btns a{
+	text-decoration: none;
+	color: darkblue;
+}
+.btns:nth-child(1){
+  background: rgba(255,255,5,0.5);
+}
+.btns:nth-child(1):hover {
+  background: rgba(255,255,5,0.999);
+  box-shadow: 0 0 10px rgba(255,255,5,0.999)
+}
+.btns:nth-child(2) {
+  background: rgba(0,255,5,0.5);
+
+}
+.btns:nth-child(2):hover {
+  background: rgba(0,255,5,0.999);
+  box-shadow: 0 0 10px rgba(0,255,5,0.999)
+}
+.btns:nth-child(3) {
+  background: rgba(255,5,5,0.5);
+}
+.btns:nth-child(3):hover {
+  background: rgba(255,5,5,0.999);
+  box-shadow: 0 0 10px rgba(255,5,5,0.999)
+}
+hr{
+	width: 100%;
+	min-height: 5px;
+	background: rgba(255,255,200,0.5);
+	border: none;
+	outline: none;
+}
+.orderinfo{
+	letter-spacing: 2px;
+	margin: 0;
+	color: yellow;
+}
+h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: rgba(255,200,0,0.5);
+	margin-top:-1px;
+	letter-spacing: 5px;
+	color:yellow;
+	text-shadow: 0 0 15px red;
+
+}
+.asayfa{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	outline: none;
+	background: rgba(255,0,0,0.9);
+	cursor: pointer;
+	transition: .2s;
+	width: 60%;
+	font-size: 10px;
+	height: 30px;
+	color: white;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	margin-bottom: 10px
+}
+.asayfa:hover{
+	background: rgba(255,0,0,0.999);
+	color: yellow;
+	font-size: 13px;
+	text-shadow: 0 0 10px yellow;
+}
+#tablosifirla{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	outline: none;
+	background: rgba(255,0,0,0.9);
+	cursor: pointer;
+	transition: .2s;
+	width: 60%;
+	font-size: 10px;
+	height: 30px;
+	color: white;
+	border-radius: 5px;
+	letter-spacing: 2px;
+}
+#sifresifirla{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	outline: none;
+	background: rgba(255,0,0,0.9);
+	cursor: pointer;
+	transition: .2s;
+	width: 60%;
+	font-size: 10px;
+	height: 30px;
+	color: white;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	margin: 5px;
+}
+#onayla{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	outline: none;
+	background: rgba(255,0,0,0.9);
+	cursor: pointer;
+	transition: .2s;
+	width: 100%;
+	font-size: 10px;
+	height: 30px;
+	color: white;
+	border-radius: 5px;
+	letter-spacing: 2px;
+}
+#tablosifirla:hover{
+	background: rgba(255,0,0,0.999);
+	color: yellow;
+	font-size: 13px;
+	text-shadow: 0 0 10px yellow;
+}
+#sifresifirla:hover{
+	background: rgba(255,0,0,0.999);
+	color: yellow;
+	font-size: 13px;
+	text-shadow: 0 0 10px yellow;
+}
+#onayla:hover{
+	background: rgba(255,0,0,0.999);
+	color: yellow;
+	font-size: 13px;
+	text-shadow: 0 0 10px yellow;
+}
+#enterpsw{
+	border: none;
+	outline: none;
+	width: 97%;
+	border-radius: 4px;
+	height: 25px;
+	margin:5px;
+}
+#sifreform
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+}
+#yok{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	outline: none;
+	background: rgba(255,0,0,0.9);
+	cursor: pointer;
+	transition: .2s;
+	width: 50%;
+	font-size: 20px;
+	height: 50px;
+	color: white;
+	border-radius: 5px;
+	letter-spacing: 2px;
+}
+#yok:hover{
+	background: rgba(255,0,0,0.999);
+	color: yellow;
+	font-size: 13px;
+	text-shadow: 0 0 10px yellow;
+}
+.butonbag{
+	text-decoration: none;
+	color: yellow;
+}
+#harita{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	
+}
+#kayitliurun{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+	height: 450px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+#kayitliyemek{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+	margin:14px;
+	height: 220px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+#kayitliicecek{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+	margin:14px;
+	height: 220px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.prices{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20px;
+	font-weight: bolder;
+	min-width: 100px;
+}
+.foodsdrinks{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	margin: 2px;
+	border-radius: 3px;
+	background:rgba(255,255,0,0.6);
+	height: 20px;
+}
+.names{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 150px;
+}
+.fooddrinksnames
+{	
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	height:19px;
+	width: 100%;
+    color: black;
+    font-size: 15px;
+    overflow-y: scroll;
+    word-break: keep-all;
+    font-weight: bold;
+
+}
+#fooddrinksnam
+{	
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	height: 30px;
+	width: 30%;
+    
+
+}
+
+#fooddrinksna
+{	
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	height: 30px;
+	width: 30%;
+    
+
+}
+.resim{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 20px;
+	overflow: hidden;
+}
+.images{
+	display: flex;
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: 0 0 5px red;
+	overflow: hidden;
+}
+.delete{
+	text-decoration: none;
+	color: red;
+	transition: .2s;
+}
+.delete:hover{
+	text-shadow: 0 0 10px red;
+	color: black;
+}
+#yemekekle{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+}
+#yemekekle form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	margin:20px;
+}
+#yemekekle form input{
+	width: 100%;
+	margin:10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	height: 30px;
+}
+.sub{
+	cursor: pointer;
+	font-size: 20px;
+	background: red;
+	color:yellow;
+	transition: .2s;
+}
+.sub:hover{
+	color:orange;
+	letter-spacing: 2px;
+}
+input[type="file"] {
+	  cursor: pointer !Important;
+	  font: 300 14px sans-serif;
+	  color:yellow;
+	}
+	input[type="file"]::-webkit-file-upload-button
+	{
+	  font: 300 12px  sans-serif;
+	  background: red;
+	  border: 0;
+	  padding: 12px 25px;
+	  cursor: pointer;
+	  color: yellow;
+	  text-transform: uppercase;
+	}
+@media only screen and (max-width: 800px){
+	#siparisler{
+		width: 100%;
+	}
+	#sbildirim{
+		width: 95%;
+	}
+	
+	#tablosifirla,#sifresifirla,#onayla,.asayfa{
+		width: 40%;
+	}
+	#yok{
+		width: 60%;
+	}
+	#tablosifirla:hover{
+	background: rgba(255,0,0,0.999);
+	color: yellow;
+	width: 40%;
+	
+	}
+	.asayfa:hover{
+	background: rgba(255,0,0,0.999);
+	color: yellow;
+	width: 40%;
+	
+	}
+
+	#sifresifirla:hover{
+	background: rgba(255,0,0,0.999);
+	color: yellow;
+	width: 40%;
+	
+	}
+	#onayla:hover{
+	background: rgba(255,0,0,0.999);
+	color: yellow;
+	width: 40%;
+	
+	}
+	#yok:hover{
+	background: rgba(255,0,0,0.999);
+	color: yellow;
+	width: 60%;
+	
+	}
+	#harita{
+		width: 90%;
+		margin-top: 30px;
+	}
+	#container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+
+	}
+	.prices{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20px;
+	font-weight: bolder;
+	min-width: 100px;
+		
+
+	}
+	#kayitliyemek
+	{
+		width: 100%;
+	}
+	#kayitliicecek
+	{
+		width: 100%;
+	}
+	#kayitliurun{
+		width: 100%;
+	}
+	.foodsdrinks
+	{
+		width: 100%;
+	}
+	#yemekekle{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	}
+	#yemekekle form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin:20px;
+}
+.resim{
+	width: 30px;
+}
+}
+@media print{
+	body *{
+			visibility: hidden;
+		}
+	.print,.print *{
+			visibility: visible;
+			
+
+
+		}
+}

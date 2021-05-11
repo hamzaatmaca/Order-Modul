@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html charset= UTF-8">
+  <meta name="robots" content="all">
+  <meta name="author" content="MentalKod">
+  <meta name="description" content="Dört işlem yapabilen bir hesap makinesi">
+  <title>Hesap Makinesi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+     <style>
+          @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Mulish', sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  background-color: #b64545;
+}
+
+body .calculator {
+  background-color: #d39b24;
+  position: relative;
+  width: 40%;
+  height: 480px;
+  left: 50%;
+  margin-top: 20px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+body .indicator {
+  top: 10px;
+  width: 81%;
+  left: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  height: 24px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #fff;
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+body .buttons {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+body .buttons .four-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .buttons .four-buttons button {
+  padding: 30px;
+  background-color: #ffb703;
+  color: #fff;
+  border: 1px solid #afafaf;
+  font-size: 20px;
+  min-width: 78px;
+  max-width: 78px;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+  margin: 3px;
+}
+
+body .buttons .four-buttons button:hover {
+  cursor: pointer;
+  background-color: #ca9101;
+}
+/*# sourceMappingURL=style.css.map */
+     </style>
+<div class="calculator">
+<div class="indicator">
+     <h3 id="yazi"></h3>
+  
+</div>
+     <div class="buttons">
+          <div class="four-buttons">
+               <button onclick="btnbir()">1</button>       
+               <button onclick="btniki()">2</button>   
+               <button onclick="btnuc()">3</button>
+               <button onclick="btnarti()" value="+">+</button>     
+               </div>    
+               <div class="four-buttons">
+               <button onclick="btndort()">4</button>       
+               <button onclick="btnbes()">5</button>   
+               <button onclick="btnalti()">6</button>  
+               <button onclick="btneksi()">-</button>   
+               </div>    
+               <div class="four-buttons">
+               <button onclick="btnyedi()">7</button>       
+               <button onclick="btnsekiz()">8</button>   
+               <button onclick="btndokuz()">9</button>   
+               <button onclick="btncarpi()">x</button>
+               </div>    
+                <div class="four-buttons">
+               <button onclick="btnc()">C</button>       
+               <button onclick="btnsifir()">0</button>   
+               <button onclick="btnesittir()">=</button>   
+               <button onclick="btnbolu()">÷</button>
+               </div>    
+     </div>
+</div>
+<script>
+var yaz = document.getElementById('yazi');
+
+var sayi;
+var ilksayi;
+
+function btnbir() {
+     yaz.innerHTML += '1';
+}
+function btniki() {
+     yaz.innerHTML += '2';
+}
+function btnuc() {
+     yaz.innerHTML += '3';
+}
+function btndort() {
+     yaz.innerHTML += '4';
+}
+function btnbes() {
+     yaz.innerHTML += '5';
+}
+function btnalti() {
+     yaz.innerHTML += '6';
+}
+function btnyedi() {
+     yaz.innerHTML += '7';
+}
+function btnsekiz() {
+     yaz.innerHTML += '8';
+}
+function btndokuz() {
+     yaz.innerHTML += '9';
+}
+function btnsifir() {
+     yaz.innerHTML += '0';
+}
+function btnesittir()
+  { 
+    document.getElementById("yazi").innerHTML=eval(document.getElementById('yazi').innerHTML)
+  }
+  function btnc()
+  {
+    document.getElementById("yazi").innerHTML=""
+  }
+  function btnarti(){
+    document.getElementById('yazi').innerHTML +="+"
+  }
+   function btneksi(){
+    document.getElementById('yazi').innerHTML +="-"
+  }
+    function btncarpi(){
+    document.getElementById('yazi').innerHTML +="*"
+  }
+     function btnbolu(){
+    document.getElementById('yazi').innerHTML +="/"
+  }
+    
+    
+</script>
+</body>
+</html>
